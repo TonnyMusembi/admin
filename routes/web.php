@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\DropdownController;
 
 
 
@@ -57,3 +58,7 @@ Route::middleware([
 Route::get('user-datatables', function () {
     return view('default');
 });
+
+Route::get('dropdown', [DropdownController::class, 'index']);
+Route::post('api/fetch-states', [DropdownController::class, 'fetchState']);
+Route::post('api/fetch-cities', [DropdownController::class, 'fetchCity']);
