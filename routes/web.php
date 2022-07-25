@@ -54,3 +54,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('user-datatables', function () {
+    return view('default');
+});
