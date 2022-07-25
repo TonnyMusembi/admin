@@ -30,7 +30,7 @@ class HomeController extends Controller
         return view('adminHome');
     }
 
-    public function managerHome() {
+    public function managerHome(){
 
         return view('managerHome');
     }
