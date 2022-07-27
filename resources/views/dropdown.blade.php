@@ -97,6 +97,12 @@
                 });
             });
         });
+
+
+        const date = new Date();
+        console.log(date)
+
+
     </script>
 </body>
 </html>
