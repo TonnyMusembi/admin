@@ -4,6 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\DropdownController;
+use App\Http\Controllers\ItemController;
+
+use App\Http\Controllers\StripePaymentController;
+
+use App\Http\Controllers\ChartJSController;
+
+use App\Http\Controllers\ProductController;
+
+
 
 
 
@@ -62,3 +71,16 @@ Route::get('user-datatables', function () {
 Route::get('dropdown', [DropdownController::class, 'index']);
 Route::post('api/fetch-states', [DropdownController::class, 'fetchState']);
 Route::post('api/fetch-cities', [DropdownController::class, 'fetchCity']);
+Route::get('item', [ItemController::class, 'index']);
+
+
+Route::controller(StripePaymentController::class)->group(function(){
+    Route::get('stripe', 'stripe');
+    Route::post('stripe', 'stripePost')->name('stripe.post');
+});
+
+Route::get('chart',[ChartJSController::class,'index']);
+
+
+Route::resource('products', ProductController::class);
+
