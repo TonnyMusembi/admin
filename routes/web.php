@@ -13,6 +13,8 @@ use App\Http\Controllers\ChartJSController;
 use App\Http\Controllers\ProductController;
 
 
+use App\Http\Controllers\LocationController;
+
 
 
 
@@ -83,4 +85,6 @@ Route::get('chart',[ChartJSController::class,'index']);
 
 
 Route::resource('products', ProductController::class);
+
+Route::get('near-by-places', [LocationController::class, 'index']);
 
