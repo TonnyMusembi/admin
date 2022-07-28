@@ -14,6 +14,8 @@ use App\Http\Controllers\ProductController;
 
 
 use App\Http\Controllers\LocationController;
+use App\Http\Controllers\SearchController;
+
 
 
 
@@ -88,3 +90,7 @@ Route::resource('products', ProductController::class);
 
 Route::get('near-by-places', [LocationController::class, 'index']);
 
+Route::controller(SearchController::class)->group(function(){
+    Route::get('demo-search', 'index');
+    Route::get('autocomplete', 'autocomplete')->name('autocomplete');
+});
