@@ -16,6 +16,9 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\SearchController;
 
+use App\Http\Controllers\UserController;
+
+
 
 
 
@@ -94,3 +97,6 @@ Route::controller(SearchController::class)->group(function(){
     Route::get('demo-search', 'index');
     Route::get('autocomplete', 'autocomplete')->name('autocomplete');
 });
+
+Route::get('users', [UserController::class, 'index']);
+Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.index');
