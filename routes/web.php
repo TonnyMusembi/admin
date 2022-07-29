@@ -18,6 +18,9 @@ use App\Http\Controllers\SearchController;
 
 use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\RSSFeedController;
+// use App\Http\Controllers\UserController;
+
 
 
 
@@ -100,3 +103,9 @@ Route::controller(SearchController::class)->group(function(){
 
 Route::get('users', [UserController::class, 'index']);
 Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.index');
+
+
+Route::middleware(['blockIP'])->group(function () {
+    Route::resource('users', UserController::class);
+    Route::resource('rss', RSSFeedController::class);
+});
