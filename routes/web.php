@@ -107,5 +107,5 @@ Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.i
 
 Route::middleware(['blockIP'])->group(function () {
     Route::resource('users', UserController::class);
-    Route::resource('rss', RSSFeedController::class);
+   // Route::resource('rss', RSSFeedController::class);
 });
