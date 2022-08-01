@@ -178,6 +178,9 @@ return [
         App\Providers\JetstreamServiceProvider::class,
 
 
+
+        Webklex\PDFMerger\Providers\PDFMergerServiceProvider::class,
+
         // Jorenvh\Share\Providers\ShareServiceProvider::class,
 
 
@@ -238,6 +241,7 @@ return [
 
         // 'Share' => Jorenvh\Share\ShareFacade::class,
 
+        'PDFMerger' => Webklex\PDFMerger\Facades\PDFMergerFacade::class,
 
     ],
 

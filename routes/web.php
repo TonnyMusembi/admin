@@ -21,6 +21,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\RSSFeedController;
 // use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\PDFController;
+
 
 
 
@@ -109,3 +111,6 @@ Route::middleware(['blockIP'])->group(function () {
     Route::resource('users', UserController::class);
    // Route::resource('rss', RSSFeedController::class);
 });
+
+Route::get('merge-pdf', [PDFController::class, 'index']);
+Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post');
