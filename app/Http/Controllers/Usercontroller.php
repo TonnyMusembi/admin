@@ -36,4 +36,8 @@ class Usercontroller extends Controller
     public function destroy(){
         return response()->json(['$']);
     }
+    public function update(){
+        return  view ('');
+
+    }
 }

@@ -16,6 +16,7 @@
         "laravel/ui": "^3.4",
         "livewire/livewire": "^2.10",
         "mediconesystems/livewire-datatables": "^0.9.4",
+        "simplesoftwareio/simple-qrcode": "~4",
         "webklex/laravel-pdfmerger": "^1.3"
     },
     "require-dev": {

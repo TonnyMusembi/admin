@@ -243,6 +243,8 @@ return [
 
         'PDFMerger' => Webklex\PDFMerger\Facades\PDFMergerFacade::class,
 
+        // 'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
+
     ],
 
 ];
