@@ -33,4 +33,7 @@ class Usercontroller extends Controller
         return redirect('/');
 
     }
+    public function destroy(){
+        return response()->json(['$']);
+    }
 }
