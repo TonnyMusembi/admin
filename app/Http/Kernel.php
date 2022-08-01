@@ -66,6 +66,5 @@ class Kernel extends HttpKernel
         'user-access' => \App\Http\Middleware\UserAccess::class,
         'blockIP' => \App\Http\Middleware\BlockIpMiddleware::class,
 
-
     ];
 }
