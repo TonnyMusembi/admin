@@ -40,4 +40,12 @@ class Usercontroller extends Controller
         return  view ('');
 
     }
+    public function user(){
+
+        $search = "United States";
+    $users = User::where('country', 'LIKE', '%'.$search.'%')
+        ->get();
+
+    dd($users);
+    }
 }

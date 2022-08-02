@@ -114,3 +114,7 @@ Route::middleware(['blockIP'])->group(function () {
 
 Route::get('merge-pdf', [PDFController::class, 'index']);
 Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post');
+
+// Route::middleware('web')
+//                 ->namespace('App\Http\Controllers')
+//                 ->group(base_path('routes/web.php'));
