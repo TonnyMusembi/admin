@@ -27,7 +27,6 @@
 	</body>
 </html>
 <script>
-
   const api=""
     fetch('api')
     .then((response) => {
