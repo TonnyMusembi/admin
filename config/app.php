@@ -182,6 +182,7 @@ return [
         Webklex\PDFMerger\Providers\PDFMergerServiceProvider::class,
 
         // Jorenvh\Share\Providers\ShareServiceProvider::class,
+        SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
 
 
     ],
@@ -243,7 +244,7 @@ return [
 
         'PDFMerger' => Webklex\PDFMerger\Facades\PDFMergerFacade::class,
 
-        // 'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
+         'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
 
     ],
 

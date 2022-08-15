@@ -26,7 +26,7 @@ public function destroy (){
 }
 public function update(){
 
-    
 }
+
 
 }

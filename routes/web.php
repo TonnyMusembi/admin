@@ -23,6 +23,8 @@ use App\Http\Controllers\RSSFeedController;
 
 use App\Http\Controllers\PDFController;
 
+use App\Http\Controllers\QRController;
+
 
 
 
@@ -118,3 +120,7 @@ Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post'
 // Route::middleware('web')
 //                 ->namespace('App\Http\Controllers')
 //                 ->group(base_path('routes/web.php'));
+
+
+Route::get('qr_code/index', [QRController::class, 'index'])->name('qrcode.index');
+Route::get('qr_code/create', [QRController::class, 'create'])->name('qrcode.create');
