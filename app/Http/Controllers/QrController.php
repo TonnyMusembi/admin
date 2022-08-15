@@ -25,7 +25,9 @@ class QrController extends Controller
         return response()->json();
     }
 
+ public function map(callable $callable){
 
+ }
 
 }
 
