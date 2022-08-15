@@ -21,9 +21,11 @@ class QrController extends Controller
         return response()->json();
 
     }
-    public function update($id){
-     return response()->json();
+    public function update(){
+        return response()->json();
     }
+
+
 
 }
 

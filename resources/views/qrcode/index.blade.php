@@ -28,7 +28,7 @@
 </html>
 <script>
 
- api=""
+  const api=""
     fetch('api')
     .then((response) => {
         console.log(response)
@@ -38,12 +38,14 @@
 
     })
 
-    function SendCode(){
+    function SendCode(){ }
 
-    }
-    
     function VerifyCode(){
 
     }
+    let myArray =[20,22,23,24];
+    console.log(myArray)
+    myArray.length = 0;
+    console.log(myArray)
 
 </script>
