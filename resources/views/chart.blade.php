@@ -7,6 +7,26 @@
 <body>
     <h1>Laravel 9 ChartJS Chart Example - ItSolutionStuff.com</h1>
     <canvas id="myChart" height="100px"></canvas>
+
+
+    <form action="uploader.php" method="post" enctype="multipart/form-data">
+        Select File:
+        <input type="file" name="fileToUpload/">
+        <input type="submit" value=" Upload Image" name="submit">
+
+    </form>
+    @extends('layout')
+    @section('content')
+    <h1>Register</h1>
+    <form action="{{route('')}}" method="POST">
+        @csrf
+
+
+
+
+    </form>
+
+    @endsection
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
