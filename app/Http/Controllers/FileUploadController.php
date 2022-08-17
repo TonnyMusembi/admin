@@ -46,4 +46,8 @@ return view('file-upload');
       //  return $users;
 
     }
+    public function update(){
+        return response()->json();
+
+    }
 }
