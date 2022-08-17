@@ -27,6 +27,8 @@ use App\Http\Controllers\QRController;
 
 use App\Http\Controllers\UserController;
 
+use App\Http\Controllers\FileUploadController;
+
 
 
 
@@ -131,4 +133,6 @@ Route::get('/file-import',[UserController::class,'importView'])->name('import-vi
 Route::post('/import',[UserController::class,'import'])->name('import');
 Route::get('/export-users',[UserController::class,'exportUsers'])->name('export-users');
 
+Route::get('file-upload', [FileUploadController::class, 'index']);
+Route::post('store', [FileUploadController::class, 'store']);
 

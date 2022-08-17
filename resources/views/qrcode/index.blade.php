@@ -19,6 +19,7 @@
 			</div>
 		</form>
         <div class="container  mt-5 text-center">
+            <div class="card-header text-center">Update Qr</div><br>
             <div class="card-body">
                 <button class="btn btn-primary" type="submit">Update</button>
                 {{-- <a href="{{asset('')}}" class="btn btn-primary">Update</a> --}}
