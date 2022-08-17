@@ -16,16 +16,16 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\SearchController;
 
-use App\Http\Controllers\UserController;
+// use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\RSSFeedController;
-// use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\PDFController;
 
 use App\Http\Controllers\QRController;
 
-//use App\Http\Controllers\UserController;
+
+use App\Http\Controllers\UserController;
 
 
 
@@ -106,14 +106,14 @@ Route::controller(SearchController::class)->group(function(){
     Route::get('autocomplete', 'autocomplete')->name('autocomplete');
 });
 
-Route::get('users', [UserController::class, 'index']);
-Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.index');
+// Route::get('users', [UserController::class, 'index']);
+// Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.index');
 
 
-Route::middleware(['blockIP'])->group(function () {
-    Route::resource('users', UserController::class);
-   // Route::resource('rss', RSSFeedController::class);
-});
+// Route::middleware(['blockIP'])->group(function () {
+//     Route::resource('users', UserController::class);
+//    // Route::resource('rss', RSSFeedController::class);
+// });
 
 Route::get('merge-pdf', [PDFController::class, 'index']);
 Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post');
