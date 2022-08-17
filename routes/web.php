@@ -25,6 +25,7 @@ use App\Http\Controllers\PDFController;
 
 use App\Http\Controllers\QRController;
 
+//use App\Http\Controllers\UserController;
 
 
 
@@ -124,3 +125,10 @@ Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post'
 
 Route::get('qr_code/index', [QRController::class, 'index'])->name('qrcode.index');
 Route::get('qr_code/create', [QRController::class, 'create'])->name('qrcode.create');
+
+
+Route::get('/file-import',[UserController::class,'importView'])->name('import-view');
+Route::post('/import',[UserController::class,'import'])->name('import');
+Route::get('/export-users',[UserController::class,'exportUsers'])->name('export-users');
+
+

@@ -184,6 +184,7 @@ return [
         // Jorenvh\Share\Providers\ShareServiceProvider::class,
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
 
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -245,6 +246,8 @@ return [
         'PDFMerger' => Webklex\PDFMerger\Facades\PDFMergerFacade::class,
 
          'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
+         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
 
     ],
 
