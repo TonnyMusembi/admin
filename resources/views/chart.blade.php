@@ -20,10 +20,10 @@
     <h1>Register</h1>
     <form action="{{route('')}}" method="POST">
         @csrf
+    <div>
+        <input type="text" >
 
-
-
-
+     </div>
     </form>
 
     @endsection
