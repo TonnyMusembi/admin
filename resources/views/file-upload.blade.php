@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container mt-4">
-        <h2 class="text-center">File Upload</h2>
+        <h2 class="text-center">Upload Files</h2>
         <form method="POST" enctype="multipart/form-data" id="upload-file" action="{{ url('store') }}" >
 
             <div class="row">
@@ -29,19 +29,19 @@
             </div>
         </form>
     </div>
-    <div class="container" row-mt-5 >
+    <div class="container" mt-5 >
         <h2 class="text-centre">Files</h2>
         <div class="card-header">Files</div>
     <form action="{{url('') }}" enctype="multipart/form-data"><br>
 
      <div class=" col-auto">
         <button class="btn btn-primary"> Download</button>
-
-
      </div>
-
     </form>
     </div>
+
+
+
 </body>
 </html>
 <script>
