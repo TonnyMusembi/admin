@@ -31,9 +31,10 @@ use App\Http\Controllers\FileUploadController;
 
 use App\Http\Controllers\ProductAjaxController;
 
-
 use App\Http\Controllers\PostController;
 
+
+use App\Http\Controllers\EmployeesController;
 
 
 
@@ -144,3 +145,8 @@ Route::post('store', [FileUploadController::class, 'store']);
 Route::resource('products-ajax-crud', ProductAjaxController::class);
 
 Route::get('/google-chart', [PostController::class, 'googleChart']);
+
+Route::get('/', [EmployeesController::class, 'index'])->name('home');
+Route::get('employees/exportcsv', [EmployeesController::class, 'exportCSV'])->name('employees.exportcsv');
+Route::get('employees/exportexcel', [EmployeesController::class, 'exportExcel'])->name('employees.exportexcel');
+Route::post('employees/exportbyagecsv', [EmployeesController::class, 'exportByAgeCSV'])->name('employees.exportbyagecsv');
