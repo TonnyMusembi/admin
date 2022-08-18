@@ -14,7 +14,6 @@ class UssdController extends Controller
        $phoneNumber = $request->get('phoneNumber');
        $text        = $request->get('text');
 
-        // use explode to split the string text response from Africa's talking gateway into an array.
 
         $ussd_string_exploded = explode("*", $text);
 
@@ -26,18 +25,18 @@ class UssdController extends Controller
             // first response when a user dials our ussd code
             $response  = "CON Welcome at Tonnytech \n";
             $response .= "1. Register \n";
-            $response .= "2. About TonnyTech";
+            $response .= "2. Proceed";
         }
 
         elseif ($text == "1") {
             // when user respond with option one to register
-            $response = "CON Choose which framework to learn \n";
+            $response = "CON Choose which  service \n";
             $response .= "1. Software Development \n";
             $response .= "2. Payments";
         }
 
         elseif ($text == "1*1") {
-            // when use response with option django
+            // when use response  softwaredevelopment
             $response = "CON Please enter your first name";
         }
 

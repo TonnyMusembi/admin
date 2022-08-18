@@ -22,8 +22,9 @@ class UserController extends Controller
     public function exportUsers(Request $request){
         return Excel::download(new ExportUser, 'users.xlsx');
     }
-
     public function destroy(){
         return response()->json();
     }
+    
+
 }
