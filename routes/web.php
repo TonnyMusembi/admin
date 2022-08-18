@@ -32,6 +32,10 @@ use App\Http\Controllers\FileUploadController;
 use App\Http\Controllers\ProductAjaxController;
 
 
+use App\Http\Controllers\PostController;
+
+
+
 
 
 /*
@@ -138,3 +142,5 @@ Route::get('file-upload', [FileUploadController::class, 'index']);
 Route::post('store', [FileUploadController::class, 'store']);
 
 Route::resource('products-ajax-crud', ProductAjaxController::class);
+
+Route::get('/google-chart', [PostController::class, 'googleChart']);

@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 9 ChartJS Chart Example - ItSolutionStuff.com</title>
+    <meta charset="utf-8">
+    <script src="https://www.google.com/jsapi"></script>
+    <style>
+        .pie-chart {
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Laravel 9 ChartJS Chart Example - ItSolutionStuff.com</h1>
-    <canvas id="myChart" height="100px"></canvas>
 
+<h2 class="text-center">Google charts</h2>
 
-    <form action="uploader.php" method="post" enctype="multipart/form-data">
-        Select File:
-        <input type="file" name="fileToUpload/">
-        <input type="submit" value=" Upload Image" name="submit">
+<div id="chartDiv" class="pie-chart"></div>
 
-    </form>
-    @extends('layout')
-    @section('content')
-    <h1>Register</h1>
-    <form action="{{route('')}}" method="POST">
-        @csrf
-    <div>
-        <input type="text" >
-
-     </div>
-    </form>
-
-    @endsection
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<div class="text-center">
+    <h2>nicesnippets.com</h2>
+</div>
 
 <script type="text/javascript">
+    var subjectData = @json($subjectData);
+    window.onload = function() {
+        google.load("visualization", "1.1", {
+            packages: ["corechart"],
+            callback: 'drawChart'
+        });
+    };
 
-      var labels =  {{ Js::from($labels) }};
-      var users =  {{ Js::from($data) }};
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Pizza');
+        data.addColumn('number', 'Populartiy');
+        data.addRows(subjectData);
 
-      const data = {
-        labels: labels,
-        datasets: [{
-          label: 'My First dataset',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: users,
-        }]
-      };
+        var options = {
+            pieHole: 0.4,
+            title: 'Popularity of Types of Framework',
+        };
 
-      const config = {
-        type: 'line',
-        data: data,
-        options: {}
-      };
-
-      const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-      );
+        var chart = new google.visualization.PieChart(document.getElementById('chartDiv'));
+        chart.draw(data, options);
+    }
 
 </script>
+</body>
 </html>
