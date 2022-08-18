@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use Carbon\Carbon;
+use Carbon\CarbonPeriod;
+
 
 use Illuminate\Http\Request;
 
@@ -22,7 +25,14 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        return view('home');
+        // return view('home');
+        $result = CarbonPeriod::create('2022-01-01', '1 month', '2022-08-01');
+
+        foreach ($result as $dt) {
+            echo $dt->format("Y-m");
+        }
+
+
     }
 
     public function adminHome() {

@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Api\CompanyController;
+use App\Http\Controllers\UssdController;
 
 
 /*
@@ -21,3 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::apiResource('companies', CompanyController::class);
+
+Route::post('v1/online/ussd/service', [UssdController::class,'onlineUssdMenu']);
+// Route::post('v1/online/ussd/service', 'UssdController@onlineUssdMenu');
