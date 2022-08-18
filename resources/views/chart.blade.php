@@ -23,6 +23,13 @@
 <div class="text-center">
     <h2>nicesnippets.com</h2>
 </div>
+<div class="container mt-5">
+    <div class="card-body">
+
+
+
+    </div>
+</div>
 
 <script type="text/javascript">
     var subjectData = @json($subjectData);
