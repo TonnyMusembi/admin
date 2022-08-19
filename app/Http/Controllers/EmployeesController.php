@@ -31,6 +31,7 @@ class EmployeesController extends Controller
           return Excel::download(new EmployeesByAgeExport($age), $file_name);
     }
     public function store(){
+        return response()->json('');
 
     }
 

@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Pagination</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <title>Laravel Datatable example</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+        <link href="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" rel="stylesheet">
+    </head>
+    <body class="bg-color">
+        <div class="container">
+            <a class="btn btn-success" href="javascript:void(0)" id="createNewProduct"> Create New User</a> <br>
+            <div class="row">
+                <h1 class="mb-3 text-center"> Users</h1>
+                <table class="table table-bordered datatable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th width="100px">Action</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="modal fade" id="ajaxModel" aria-hidden="true">
 
-<div class="container">
-    <h1> Pagination </h1>
 
-    <table class="table table-bordered data-table">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($users as $user)
-            <tr>
-                <td>{{ $user->id }}</td>
-                <td>{{ $user->name }}</td>
-                <td>{{ $user->email }}</td>
-                <td>
-                    <a
-                        href="javascript:void(0)"
-                        id="show-user"
-                        class="btn btn-info"
-                        >Show</a>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
 
-    <div class="text-center">
-
-        @if($prevURL)
-            <a class="btn btn-primary m-10 leftbtn" href="{{ route('users.index', $prevURL) }}"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous</a>
-        @endif
-
-        @if($nextURL)
-            <a class="btn btn-primary m-10 rightbtn" href="{{ route('users.index', $nextURL) }}">Next <i class="fa fa-angle-right" aria-hidden="true"></i> </a>
-        @endif
-
-    </div>
-
-</div>
-
-</body>
-
-</html>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var table = $('.datatable').DataTable({
+                processing: true,
+                serverSide: true,
+               // ajax: "{{ route('data') }}",
+               ajax:"{{route('data')}}",
+                columns: [
+                    {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+                    {data: 'name', name: 'name'},
+                    {data: 'email', name: 'email'},
+                    {data: 'action', name: 'action', orderable: false, searchable: false},
+                ]
+            });
+        });
+        </script>
+    </body>
+</html

@@ -26,5 +26,23 @@ class UserController extends Controller
         return response()->json();
     }
 
+    public function index(){
+        return view('users');
+    }
+    public function data(Request $request){
+       $data = User::orderBy('id', 'desc')
+            ->get();
+            
+            return Datatables::of($data)
+                ->addIndexColumn()
+                ->addColumn('action', function($row) {
+                       return '<a href="javascript:void(0)" class="edit btn btn-primary btn-sm">View</a>';
+                })
+                ->rawColumns(['action'])
+                ->make(true);
+
+
+    }
+
 
 }
