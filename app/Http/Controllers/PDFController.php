@@ -37,4 +37,12 @@ class PDFController extends Controller
     return response()->download(public_path($fileName));
 
     }
+    public function data(){
+        $t = date("H");
+
+   if ($t < "20") {
+  echo "Have a good day!";
+
+    }
+}
 }

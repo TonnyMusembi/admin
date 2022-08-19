@@ -14,7 +14,7 @@ class UssdController extends Controller
        $phoneNumber = $request->get('phoneNumber');
        $text        = $request->get('text');
 
-
+       
         $ussd_string_exploded = explode("*", $text);
 
         // Get ussd menu level number from the gateway
