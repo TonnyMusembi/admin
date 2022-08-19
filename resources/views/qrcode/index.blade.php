@@ -55,12 +55,9 @@
     })
     .catch((error) => {
         console.log(error)
-
     })
 
-    function SendCode(){ }
-
-
+    function SendCode(){  }
     let myArray =[20,22,23,24];
     console.log(myArray)
     myArray.length = 0;
