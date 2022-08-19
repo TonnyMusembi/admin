@@ -48,6 +48,9 @@
             <form action="{{ url('')}}" method="POST" enctype="">
 
             </form>
+            <div>
+      <a href="{{route('products-ajax-crud.index')}}" class="btn btn-primary">Update</a>
+            </div>
 
         </div>
     </body>
