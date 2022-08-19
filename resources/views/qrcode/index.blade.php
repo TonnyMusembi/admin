@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <div class="text-center">
-            <a class="btn btn-success" href="{{ route('products-ajax-crud')}}" id="createNewProduct"> Create New User</a> <br>
+            {{-- <a class="btn btn-success" href="{{ route('')}}" id="createNewProduct"> Create New User</a> <br> --}}
 
         </div>
 		<form class="text-center" action="{{route('qrcode.create')}}" method="get" accept-charset="utf-8">
@@ -25,8 +25,8 @@
         <div class="container  mt-5 text-center">
             <div class="card-header text-center">Update Qr</div><br>
             <div class="card-body">
-                <button class="btn btn-primary" type="submit">Update</button>
-                {{-- <a href="{{asset('')}}" class="btn btn-primary">Update</a> --}}
+                {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
+                <a href="{{route('products-ajax-crud.index')}}" class="btn btn-primary">Update</a>
 
             </div>
         </div>

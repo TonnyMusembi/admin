@@ -41,7 +41,6 @@ class UserController extends Controller
                 ->rawColumns(['action'])
                 ->make(true);
 
-
     }
 
 }
