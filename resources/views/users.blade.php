@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel Datatable example</title>
+        <title>Datatable</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
         <link href="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" rel="stylesheet">
@@ -22,6 +22,16 @@
                     </thead>
                 </table>
             </div>
+        </div>
+
+        <div class="container -mt-5">
+            <form action="{{ url('')}}" method="POST" enctype="">
+
+            </form>
+            <div class="container mt-5">
+            <a class="btn btn-success" href="{{ route('qrcode.index')}}" id="createNewProduct"> Create New User</a> <br>
+            </div>
+
         </div>
         <div class="modal fade" id="ajaxModel" aria-hidden="true"
 
@@ -44,14 +54,6 @@
             });
         });
         </script>
-        <div class="container -mt-5">
-            <form action="{{ url('')}}" method="POST" enctype="">
 
-            </form>
-            <div>
-      <a href="{{route('products-ajax-crud.index')}}" class="btn btn-primary">Update</a>
-            </div>
-
-        </div>
     </body>
-</html
+</html>
