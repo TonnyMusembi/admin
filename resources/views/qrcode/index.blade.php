@@ -33,15 +33,15 @@
         <div class="container mt-5" >
             <div class="card-body">
                 <div class="card-header">Purchase</div>
-             <form action="" enctype="" method="POST">
-                <button class="btn btn-primary">Next</button>
+             <form action="{{route('data')}}" enctype="" >
+                {{-- <button class="btn btn-primary">Next</button> --}}
 
              </form>
             </div>
         </div>
         <div class="container mt-5">
             <div class="card-body">
-                <div class="card-header">Products</div>
+                {{-- <div class="card-header">Products</div> --}}
 
             </div>
         </div>

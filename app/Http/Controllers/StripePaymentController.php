@@ -39,4 +39,7 @@ class StripePaymentController extends Controller
 
         return back();
     }
+    public function store(){
+        return response()->json();
+    }
 }
