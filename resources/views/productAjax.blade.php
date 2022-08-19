@@ -65,9 +65,7 @@
     <div class="container mt-5 text-center">
         <a href="{{route('qrcode.index')}}" class="btn btn-primary">Update</a>
 
-        <form action="{{route/}}">
-
-
+        {{-- <form action="{{route/}}"> --}}
 
         </form>
     </div>

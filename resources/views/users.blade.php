@@ -42,10 +42,13 @@
                     {data: 'DT_RowIndex', name: 'DT_RowIndex'},
                     {data: 'name', name: 'name'},
                     {data: 'email', name: 'email'},
-                    {data: 'action', name: 'action', orderable: false, searchable: false},
+                    {data: 'action', name: 'action', orderable: true, searchable: true},
                 ]
             });
         });
         </script>
+
+
+
     </body>
 </html
