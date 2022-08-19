@@ -13,7 +13,6 @@ class ProductAjaxController extends Controller
     //
     public function index(Request $request){
 
-
         if ($request->ajax()) {
 
             $data = Product::latest()->get();
@@ -60,6 +59,6 @@ class ProductAjaxController extends Controller
         return response()->json(['success'=>'Product deleted successfully.']);
     }
     public function update(){
-        return response()->json(['sucess'=>'successfull']);
+        return response()->json();
     }
 }
