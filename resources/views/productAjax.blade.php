@@ -62,6 +62,10 @@
             </div>
         </div>
     </div>
+    <div class="container mt-5">
+        <a href="{{route('products-ajax-crud.store')}}" class="btn btn-primary">Update</a>
+
+    </div>
     </body>
     <script type="text/javascript">
       $(function () {
