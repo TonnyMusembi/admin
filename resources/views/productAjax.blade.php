@@ -62,8 +62,8 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <a href="{{route('products-ajax-crud.store')}}" class="btn btn-primary">Update</a>
+    <div class="container mt-5 text-center">
+        <a href="{{route('qrcode.index')}}" class="btn btn-primary">Update</a>
 
     </div>
     </body>
