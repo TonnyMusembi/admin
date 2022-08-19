@@ -8,6 +8,10 @@
 
 	</head>
 	<body>
+        <div class="text-center">
+            <a class="btn btn-success" href="{{ route('products-ajax-crud')}}" id="createNewProduct"> Create New User</a> <br>
+
+        </div>
 		<form class="text-center" action="{{route('qrcode.create')}}" method="get" accept-charset="utf-8">
 			<div class="row mt-5">
 				<div class="col-md-12">

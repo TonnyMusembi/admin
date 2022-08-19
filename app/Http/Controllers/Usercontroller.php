@@ -32,7 +32,7 @@ class UserController extends Controller
     public function data(Request $request){
        $data = User::orderBy('id', 'desc')
             ->get();
-            
+
             return Datatables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function($row) {
@@ -43,6 +43,5 @@ class UserController extends Controller
 
 
     }
-
 
 }
