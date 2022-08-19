@@ -29,9 +29,8 @@
 
             </form>
             <div class="container mt-5">
-            <a class="btn btn-success" href="{{ route('qrcode.index')}}" id="createNewProduct"> Create New User</a> <br>
+            <a class="btn btn-primary" href="{{ route('qrcode.index')}}" id="createNewProduct">Next</a> <br>
             </div>
-
         </div>
         <div class="modal fade" id="ajaxModel" aria-hidden="true"
 
@@ -54,6 +53,5 @@
             });
         });
         </script>
-
     </body>
 </html>
