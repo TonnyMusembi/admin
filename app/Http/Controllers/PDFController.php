@@ -26,8 +26,7 @@ class PDFController extends Controller
 
         foreach ($request->file('filenames') as $key => $value) {
             $pdf->addPDF($value->getPathName(), 'all');
-        }
-
+        } 
         $fileName = time().'.pdf';
         $pdf->merge();
         $pdf->save(public_path($fileName));
@@ -40,8 +39,8 @@ class PDFController extends Controller
     public function data(){
         $t = date("H");
 
-   if ($t < "20") {
-  echo "Have a good day!";
+     if ($t < "20") {
+     echo "Have a good day!";
 
     }
 }
