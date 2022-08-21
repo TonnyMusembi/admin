@@ -31,3 +31,5 @@ class CreateArticlesTable extends Migration
         Schema::dropIfExists('articles');
     }
 }
+
+

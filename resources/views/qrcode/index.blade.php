@@ -53,6 +53,25 @@
 	</body>
 </html>
 <script>
+
+// export default {
+//     data(){
+
+//     }
+
+
+
+// },
+// mounted() {
+//     axios.get() .then((respose) => {
+//         console.log(response)
+
+//     })
+
+
+
+
+// },
   const api=""
     fetch('api')
     .then((response) => {
