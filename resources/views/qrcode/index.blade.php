@@ -32,24 +32,21 @@
         </div>
         <div class="container mt-5" >
             <div class="card-body">
-                <div class="card-header">Purchase</div>
+                {{-- <div class="card-header">Purchase</div> --}}
              <form action="{{route('data')}}" enctype="" >
                 {{-- <button class="btn btn-primary">Next</button> --}}
 
              </form>
             </div>
         </div>
+
         <div class="container mt-5">
             <div class="card-body">
                 {{-- <div class="card-header">Products</div> --}}
 
             </div>
         </div>
-        <div class="container">
 
-
-
-        </div>
 	</body>
 </html>
 <script>
@@ -62,13 +59,13 @@
 
 
 // },
-// mounted() {
-//     axios.get() .then((respose) => {
-//         console.log(response)
+mounted() {
 
-//     })
+    axios.get() .then((respose) => {
+        console.log(response)
+    })
 
-// },
+},
   const api=""
     fetch('api')
     .then((response) => {

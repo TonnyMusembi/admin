@@ -42,5 +42,18 @@ class UserController extends Controller
                 ->make(true);
 
     }
+    public function show(User $user){
+        return view('users',[
+            'user' =>$user
+        ]);
+    }
+    public function update(User $user){
+        return view('users',[]);
+
+    }
+    public function  create(){
+        return response()->json(); 
+
+    }
 
 }
