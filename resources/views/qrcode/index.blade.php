@@ -26,7 +26,7 @@
             <div class="card-header text-center">Update Qr</div><br>
             <div class="card-body">
                 {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
-                <a href="{{route('products-ajax-crud.index')}}" class="btn btn-primary">Update</a>
+                <a href="{{route('chartjs.index')}}" class="btn btn-primary">Update</a>
 
             </div>
         </div>
@@ -59,13 +59,13 @@
 
 
 // },
-mounted() {
+// mounted() {
 
-    axios.get() .then((respose) => {
-        console.log(response)
-    })
+//     axios.get() .then((respose) => {
+//         console.log(response)
+//     })
 
-},
+// },
   const api=""
     fetch('api')
     .then((response) => {

@@ -35,9 +35,7 @@ use App\Http\Controllers\PostController;
 
 
 use App\Http\Controllers\EmployeesController;
-
-
-
+use App\Http\Controllers\StockController;
 
 /*
 |--------------------------------------------------------------------------
@@ -102,7 +100,9 @@ Route::controller(StripePaymentController::class)->group(function(){
     Route::post('stripe', 'stripePost')->name('stripe.post');
 });
 
-Route::get('chart',[ChartJSController::class,'index']);
+//Route::get('chart',[ChartJSController::class,'index']);
+Route::get('chartjs', [ChartJsController::class, 'index'])->name('chartjs.index');
+
 
 
 Route::resource('products', ProductController::class);
@@ -154,3 +154,9 @@ Route::post('employees/exportbyagecsv', [EmployeesController::class, 'exportByAg
 
 Route::get('users', [UserController::class, 'index'])->name('index');
 Route::get('users/data', [UserController::class, 'data'])->name('data');
+
+//Route::get('stock/add','StockController@create');
+
+Route::get('stock/add',[StockController::class,'create']);
+Route::post('stock/add',[StockController::class,'store']);
+Route::post('stocks',[StockController::class,'@index']);
