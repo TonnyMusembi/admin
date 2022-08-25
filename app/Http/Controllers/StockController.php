@@ -27,6 +27,7 @@ class StockController extends Controller
     public function create()
     {
         //
+    return view('');
     }
 
     /**
@@ -95,4 +96,5 @@ class StockController extends Controller
     {
         //
     }
+
 }

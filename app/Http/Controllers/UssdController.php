@@ -14,7 +14,7 @@ class UssdController extends Controller
        $phoneNumber = $request->get('phoneNumber');
        $text        = $request->get('text');
 
-       
+
         $ussd_string_exploded = explode("*", $text);
 
         // Get ussd menu level number from the gateway
@@ -77,7 +77,6 @@ class UssdController extends Controller
             // Our response a user respond with input 2 from our first level
             $response = "END At TonnyTech.";
         }
-
 
         // send your response back to the API
         header('Content-type: text/plain');
