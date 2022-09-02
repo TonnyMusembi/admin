@@ -254,7 +254,9 @@ return [
          'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
          'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
+        // 'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+
 
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 

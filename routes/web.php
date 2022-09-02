@@ -37,6 +37,10 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\StockController;
 
+
+use App\Http\Controllers\StudentController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -160,3 +164,7 @@ Route::get('users/data', [UserController::class, 'data'])->name('data');
 Route::get('stock/add',[StockController::class,'create']);
 Route::post('stock/add',[StockController::class,'store']);
 Route::post('stocks',[StockController::class,'@index']);
+
+
+Route::get('students', [StudentController::class, 'index']);
+Route::get('students/list', [StudentController::class, 'getStudents'])->name('students.list');
