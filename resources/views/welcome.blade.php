@@ -8,7 +8,6 @@
     <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="container mt-5">
     <h2 class="mb-4">Datatables </h2>
     <table class="table table-bordered yajra-datatable">

@@ -186,7 +186,7 @@ return [
 
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
-        Yajra\DataTables\DataTablesServiceProvider::class,
+        yajra\Datatables\DatatablesServiceProvider::class,
 
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
@@ -254,8 +254,7 @@ return [
          'QrCode' => 'SimpleSoftwareIO\QrCode\Facades\QrCode',
          'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
-        // 'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'Datatables' => yajra\Datatables\Datatables::class,
 
 
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
