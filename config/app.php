@@ -186,7 +186,7 @@ return [
 
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
-        yajra\Datatables\DatatablesServiceProvider::class,
+      Yajra\DataTables\DataTablesServiceProvider::class,
 
         Maatwebsite\Excel\ExcelServiceProvider::class,
 

@@ -28,6 +28,6 @@ class StudentController extends Controller
 
     }
     public function destroy(){
-        
+
     }
 }
