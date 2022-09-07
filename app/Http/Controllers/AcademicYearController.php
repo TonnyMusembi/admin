@@ -16,4 +16,7 @@ class AcademicYearController extends Controller
 
 
     }
+    public function create($id){
+
+    }
 }
