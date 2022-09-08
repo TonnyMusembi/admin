@@ -45,6 +45,9 @@ class StockController extends Controller
             'stockYear' => $request->get('stockYear'),
           ]);
           $stock->save();
+          if ($stock === 0){
+            echo " Low balance";
+          }
 
           return redirect('stocks');
 
@@ -95,6 +98,11 @@ class StockController extends Controller
     public function destroy($id)
     {
         //
+        if ($id === true){
+            echo "";
+
+        }
+        return response()->json($id);
     }
 
 }
