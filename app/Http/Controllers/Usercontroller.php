@@ -52,8 +52,11 @@ class UserController extends Controller
 
     }
     public function  create(){
-        return response()->json(); 
+        return response()->json();
 
+    }
+    public function delete(){
+        return response()->json();
     }
 
 }
