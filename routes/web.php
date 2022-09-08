@@ -34,7 +34,6 @@ use App\Http\Controllers\ProductAjaxController;
 
 use App\Http\Controllers\PostController;
 
-
 use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\StockController;
 
