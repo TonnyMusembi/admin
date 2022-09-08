@@ -30,4 +30,7 @@ class StudentController extends Controller
     public function destroy(){
 
     }
+    public function update(){
+return response()->json(['$data']);
+    }
 }

@@ -37,7 +37,7 @@
 <script type="text/javascript">
   $(function () {
 
-    var table = $('.yajra-datatable').DataTable({
+     var table = $('.yajra-datatable').DataTable({
         processing: true,
         serverSide: true,
         ajax: "{{ route('students.list') }}",
