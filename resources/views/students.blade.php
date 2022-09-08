@@ -10,7 +10,7 @@
 <body>
 
 <div class="container mt-5">
-    <h2 class="mb-4">Laravel 7|8 Yajra Datatables Example</h2>
+    <h2 class="mb-4">Yajra Datatables </h2>
     <table class="table table-bordered yajra-datatable">
         <thead>
             <tr>
