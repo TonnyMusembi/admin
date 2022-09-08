@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DropdownController;
 use App\Http\Controllers\ItemController;
 
@@ -168,3 +169,4 @@ Route::post('stocks',[StockController::class,'@index']);
 
 Route::get('students', [StudentController::class, 'index']);
 Route::get('students/list', [StudentController::class, 'getStudents'])->name('students.list');
+Route::get('category',[CategoryController::class,'index']);
