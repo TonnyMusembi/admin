@@ -40,6 +40,9 @@ use App\Http\Controllers\StockController;
 
 use App\Http\Controllers\StudentController;
 
+use App\Http\Controllers\GoogleController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -169,3 +172,6 @@ Route::post('stocks',[StockController::class,'@index']);
 Route::get('students', [StudentController::class, 'index']);
 Route::get('students/list', [StudentController::class, 'getStudents'])->name('students.list');
 Route::get('category',[CategoryController::class,'index']);
+
+Route::get('google-chart', [GoogleController::class, 'googleLineChart']);
+
