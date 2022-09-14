@@ -10,7 +10,7 @@ class GoogleController extends Controller
 {
     //
     public function index(){
-        return view('result');
+       // return view('result');
 
     }
     public function googleLineChart()
@@ -23,5 +23,9 @@ class GoogleController extends Controller
         }
 
         return view('googleChart', compact('result'));
+    }
+    public function  destroy(){
+
+
     }
 }
