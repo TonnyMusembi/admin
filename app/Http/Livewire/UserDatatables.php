@@ -20,7 +20,7 @@ class UserDatatables extends LivewireDatatable
      * @return response()
      */
     public function columns()
-    {
+       {
         return [
             NumberColumn::name('id')
                 ->label('ID')

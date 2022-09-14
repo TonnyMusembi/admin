@@ -31,6 +31,9 @@
             <div class="container mt-5">
             <a class="btn btn-primary" href="{{ route('qrcode.index')}}" id="createNewProduct">Next</a> <br>
             </div>
+            <div class="container mt-5">
+                {{-- <a  class="btn btn-success"  href="{{}}"></a> --}}
+            </div>
         </div>
         <div class="modal fade" id="ajaxModel" aria-hidden="true"
 

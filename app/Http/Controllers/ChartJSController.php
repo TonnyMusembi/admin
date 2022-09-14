@@ -35,7 +35,19 @@ public function index()
   }
   public function store(Request $request){
     $year =[];
-    return view();
+    foreach ($year as $key =>$value){
+
+    }
+    return view('chartjs');
+
+  }
+  public function show ($id){
+    return  response()->json(['$id']);
+
+  }
+
+  public function create($id){
+return response()->json(['$id']);
 
   }
 }
