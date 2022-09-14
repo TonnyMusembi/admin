@@ -37,7 +37,6 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\StockController;
 
-
 use App\Http\Controllers\StudentController;
 
 use App\Http\Controllers\GoogleController;
@@ -174,4 +173,3 @@ Route::get('students/list', [StudentController::class, 'getStudents'])->name('st
 Route::get('category',[CategoryController::class,'index']);
 
 Route::get('google-chart', [GoogleController::class, 'googleLineChart']);
-
