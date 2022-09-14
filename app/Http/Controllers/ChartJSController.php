@@ -23,7 +23,7 @@ class ChartJSController extends Controller
 // return view('chart', compact('labels', 'data'));    }
 
 public function index()
-{
+  {
     $year = ['2015','2016','2017','2018','2019','2020'];
 
     $user = [];
@@ -32,5 +32,10 @@ public function index()
     }
 
     return view('chartjs')->with('year',json_encode($year,JSON_NUMERIC_CHECK))->with('user',json_encode($user,JSON_NUMERIC_CHECK));
-}
+  }
+  public function store(Request $request){
+    $year =[];
+    return view();
+
+  }
 }
