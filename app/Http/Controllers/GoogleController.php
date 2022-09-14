@@ -24,8 +24,7 @@ class GoogleController extends Controller
 
         return view('googleChart', compact('result'));
     }
-    public function  destroy(){
-
-
+    public function  destroy($id){
+        return response()->json('[$id]');
     }
 }
