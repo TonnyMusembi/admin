@@ -13,8 +13,7 @@ class GoogleController extends Controller
        // return view('result');
 
     }
-    public function googleLineChart()
-    {
+    public function googleLineChart(){
         $visitors = Visitor::select("visit_date", "click", "viewer")->get();
 
         $result[] = ['Dates','Clicks','Viewers'];
@@ -26,5 +25,8 @@ class GoogleController extends Controller
     }
     public function  destroy($id){
         return response()->json('[$id]');
+    }
+    public function create(){
+        return response ()->json('');
     }
 }
