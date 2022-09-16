@@ -47,16 +47,17 @@
             </div>
         </div>
      <div class="container mt-5">
+        <div class="cardbody">
 
+        </div>
+        <form action="" enctype="" method="POST">
 
-
-
+        </form>
      </div>
 
 	</body>
 </html>
 <script>
-
 // export default {
 //     data(){
 
@@ -72,14 +73,16 @@
 //     })
 
 // },
-  const api=""
-    fetch('api')
+  const url="http://admin.test/api/blogs/"
+    fetch('url')
     .then((response) => {
-        console.log(response)
+        console.log(response.data.data)
+         this.blogs=response.data
     })
     .catch((error) => {
         console.log(error)
     })
+
 
     function SendCode(){  }
     let myArray =[20,22,23,24];
