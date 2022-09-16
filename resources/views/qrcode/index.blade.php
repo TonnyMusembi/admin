@@ -33,7 +33,7 @@
             <div class="card-body">
                 {{-- <div class="card-header">Purchase</div> --}}
              <form action="{{route('data')}}" enctype="" >
-                <button class="btn btn-primary">Next</button>
+                {{-- <button class="btn btn-primary">Next</button> --}}
 
              </form>
             </div>
