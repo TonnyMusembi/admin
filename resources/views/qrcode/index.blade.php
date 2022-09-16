@@ -27,14 +27,13 @@
             <div class="card-body">
                 {{-- <button class="btn btn-primary" type="submit">Update</button> --}}
                 <a href="{{route('chartjs.index')}}" class="btn btn-primary">Update</a>
-
             </div>
         </div>
         <div class="container mt-5" >
             <div class="card-body">
                 {{-- <div class="card-header">Purchase</div> --}}
              <form action="{{route('data')}}" enctype="" >
-                {{-- <button class="btn btn-primary">Next</button> --}}
+                <button class="btn btn-primary">Next</button>
 
              </form>
             </div>
@@ -47,7 +46,7 @@
             </div>
         </div>
      <div class="container mt-5">
-        <div class="cardbody">
+        <div class="cardbody" >
 
         </div>
         <form action="" enctype="" method="POST">
