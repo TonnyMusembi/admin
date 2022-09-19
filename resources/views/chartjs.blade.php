@@ -21,8 +21,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script>
-        var year = <?php echo $year; ?>;
-        //var user = <?php echo $user; ?>;
+        const year =<?php echo$year;?>;
         const user = <?php echo $user;?>;
         var barChartData = {
             labels: year,
