@@ -81,19 +81,13 @@
 const payload ={
 
 }
-  const url="http://admin.test/api/blogs/"
+  const url=""
     fetch('url')
     .then((response) => {
         console.log(response.data.data)
-         this.blogs=response.data
+         this.tickest=response.data
     })
-    if (!valid){
 
-
-    },
-    else{
-        
-    }
     .catch((error) => {
         console.log(error)
     })
@@ -104,5 +98,8 @@ const payload ={
     console.log(myArray)
     myArray.length = 0;
     console.log(myArray)
+
+
+
 
 </script>
