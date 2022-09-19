@@ -29,5 +29,7 @@ class QrController extends Controller
 
  }
 
+ 
+
 }
 

@@ -14,4 +14,8 @@ class CommentController extends Controller
     public function store(Request $request){
         return response()->json();
     }
+    public function create(){
+        return response()->json(['data']);
+
+    }
 }
