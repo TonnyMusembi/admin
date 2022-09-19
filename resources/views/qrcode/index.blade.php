@@ -87,6 +87,13 @@ const payload ={
         console.log(response.data.data)
          this.blogs=response.data
     })
+    if (!valid){
+
+
+    },
+    else{
+        
+    }
     .catch((error) => {
         console.log(error)
     })
