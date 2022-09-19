@@ -120,15 +120,6 @@ Route::controller(SearchController::class)->group(function(){
     Route::get('autocomplete', 'autocomplete')->name('autocomplete');
 });
 
-// Route::get('users', [UserController::class, 'index']);
-// Route::get('users/page/{page}', [UserController::class, 'index'])->name('users.index');
-
-
-// Route::middleware(['blockIP'])->group(function () {
-//     Route::resource('users', UserController::class);
-//    // Route::resource('rss', RSSFeedController::class);
-// });
-
 Route::get('merge-pdf', [PDFController::class, 'index']);
 Route::post('merge-pdf', [PDFController::class, 'store'])->name('merge.pdf.post');
 
@@ -141,9 +132,6 @@ Route::get('qr_code/index', [QRController::class, 'index'])->name('qrcode.index'
 Route::get('qr_code/create', [QRController::class, 'create'])->name('qrcode.create');
 
 
-// Route::get('/file-import',[UserController::class,'importView'])->name('import-view');
-// Route::post('/import',[UserController::class,'import'])->name('import');
-// Route::get('/export-users',[UserController::class,'exportUsers'])->name('export-users');
 
 Route::get('file-upload', [FileUploadController::class, 'index']);
 Route::post('store', [FileUploadController::class, 'store']);
@@ -173,3 +161,5 @@ Route::get('students/list', [StudentController::class, 'getStudents'])->name('st
 Route::get('category',[CategoryController::class,'index']);
 
 Route::get('google-chart', [GoogleController::class, 'googleLineChart']);
+
+

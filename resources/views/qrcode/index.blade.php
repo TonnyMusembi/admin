@@ -52,7 +52,14 @@
 
         </form>
      </div>
-
+     <div class="container mt-5">
+     <form action="{{ route('index') }}" method="POST" class="d-inline">
+            @csrf
+            <button type="submit" class="d-inline btn btn-link p-0">
+                click here to request another
+            </button>.
+        </form>
+</div>
 	</body>
 </html>
 <script>
@@ -71,6 +78,9 @@
 //     })
 
 // },
+const payload ={
+
+}
   const url="http://admin.test/api/blogs/"
     fetch('url')
     .then((response) => {
