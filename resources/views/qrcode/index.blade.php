@@ -67,9 +67,6 @@
 //     data(){
 
 //     }
-
-
-
 // },
 // mounted() {
 
@@ -78,9 +75,6 @@
 //     })
 
 // },
-const payload ={
-
-}
   const url=""
     fetch('url')
     .then((response) => {
