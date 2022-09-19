@@ -22,7 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script>
         var year = <?php echo $year; ?>;
-        var user = <?php echo $user; ?>;
+        //var user = <?php echo $user; ?>;
+        const user = <?php echo $user;?>;
         var barChartData = {
             labels: year,
             datasets: [{
